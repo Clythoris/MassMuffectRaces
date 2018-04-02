@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<FactionDef>
+		<defName>BatarianFaction</defName>
+		<label>Batarian Shmoo</label>
+		<description>A batarian slave company used to have one of their largest warehouses on this planet, until a law enforcement presence forced them into hiding for decades. Due to that the batarians had to stay on this planet and after a while they just settled here, forgetting about their space piracy ways.</description>
+		<pawnsPlural>Batarian</pawnsPlural>
+		<fixedName>Batarian Shmoo</fixedName>
+		
+		<baseSelectionWeight>1</baseSelectionWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		
+		<homeIconPath>World/WorldObjects/DefaultFactionBase</homeIconPath>
+		<expandingIconTexture>World/WorldObjects/BatarianFlag01</expandingIconTexture>
+		
+		<canMakeRandomly>true</canMakeRandomly>
+		<canStageAttacks>true</canStageAttacks>
+        <canSiege>true</canSiege>
+		
+		<!--<factionNameMaker>NamerFaction</factionNameMaker>-->
+		<baseNameMaker>NamerFactionBaseOutlander</baseNameMaker>
+		<techLevel>Industrial</techLevel>
+		<backstoryCategory>BatarianBackstory</backstoryCategory>		
+
+		<hairTags>
+			<li>BatarianHair</li>
+		</hairTags>
+		
+		<startingGoodwill>
+			<min>-80</min>
+			<max>-25</max>
+		</startingGoodwill>
+		<naturalColonyGoodwill>
+			<min>-80</min>
+			<max>-20</max>
+		</naturalColonyGoodwill>
+
+		<visitorTraderKinds>
+			<li>Visitor_Outlander_Standard</li>
+		</visitorTraderKinds>
+		<caravanTraderKinds>
+      <li>Caravan_Neolithic_Slaver</li>
+      <li>Caravan_Outlander_CombatSupplier</li>
+      <li>Caravan_Outlander_PirateMerchant</li>
+		</caravanTraderKinds>
+		<baseTraderKinds>
+			<li>Base_Outlander_Standard</li>
+		</baseTraderKinds>
+		
+        <colorSpectrum>
+         <li>(0.97, 0.42, 0.66)</li>
+        </colorSpectrum>
+
+		<mustStartOneEnemy>false</mustStartOneEnemy>
+		<leaderTitle>Chancellor</leaderTitle>
+
+		<allowedArrivalTemperatureRange>
+			<min>-15</min>
+			<max>40</max>
+		</allowedArrivalTemperatureRange>
+		
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Normal</kindDef>
+        <options>
+          <BatarianColonist01>50</BatarianColonist01>
+		  <BatarianSoldier01>60</BatarianSoldier01>
+		  <BatarianElite01>25</BatarianElite01>
+		  <BatarianCaptain01>10</BatarianCaptain01>
+	   	  <BatarianChancellor01>1</BatarianChancellor01>
+        </options>
+      </li>
+	  <li>
+      <kindDef>Trader</kindDef>
+        <traders>
+          <BatarianTrader01>1</BatarianTrader01>
+        </traders>
+        <carriers>
+          <Dromedary>4</Dromedary>
+        </carriers>
+        <guards>
+          <BatarianColonist01>90</BatarianColonist01>
+		  <BatarianSoldier01>60</BatarianSoldier01>
+        </guards>
+      </li>
+	  <li>
+        <kindDef>FactionBase</kindDef>
+        <options>
+		  <BatarianSoldier01>60</BatarianSoldier01>
+		  <BatarianElite01>25</BatarianElite01>
+		  <BatarianColonist01>50</BatarianColonist01>
+		  <BatarianCaptain01>10</BatarianCaptain01>
+		  <BatarianChancellor01>1</BatarianChancellor01>
+        </options>
+      </li>
+    </pawnGroupMakers>
+	</FactionDef>
+	  
+	
+</Defs>

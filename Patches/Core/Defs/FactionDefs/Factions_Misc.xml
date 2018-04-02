@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<Operation Class="PatchOperationReplace">
+<xpath>*/FactionDef[defName="Tribe"]/baseSelectionWeight</xpath>
+<value>
+<baseSelectionWeight>0</baseSelectionWeight>
+</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+<xpath>*/FactionDef[defName="Tribe"]/requiredCountAtGameStart</xpath>
+<value>
+<requiredCountAtGameStart>0</requiredCountAtGameStart>
+</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+<xpath>*/FactionDef[defName="Tribe"]/canMakeRandomly</xpath>
+<value>
+<canMakeRandomly>false</canMakeRandomly>
+</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+<xpath>*/FactionDef[defName="Pirate"]/pawnGroupMakers</xpath>
+<value>
+<pawnGroupMakers>
+      <li>
+				<!-- Normal fights, standard mix -->
+				<kindDef>Normal</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <Drifter>5</Drifter>
+					<GrenadierEMP>5</GrenadierEMP>
+					<GrenadierDestructive>20</GrenadierDestructive>
+					<Thrasher>70</Thrasher>
+					<MercenarySlasher>70</MercenarySlasher>
+					<MercenaryHeavy>60</MercenaryHeavy>
+					<MercenarySniper>70</MercenarySniper>
+					<Scavenger>90</Scavenger>
+					<Pirate>120</Pirate>
+					<MercenaryGunner>100</MercenaryGunner>
+					<MercenaryElite>100</MercenaryElite>
+   					<PirateBoss>100</PirateBoss>
+                    <!-- -->
+		            <KroganSoldier01>10</KroganSoldier01>
+		            <KroganElite01>10</KroganElite01>
+		            <KroganEliteBrawler01>10</KroganEliteBrawler01>
+		            <KroganBrawler01>10</KroganBrawler01>
+		            <SalarianSoldier01>5</SalarianSoldier01>
+		            <SalarianElite01>5</SalarianElite01>
+					<TurianSoldier01>5</TurianSoldier01>
+					<TurianElite01>5</TurianElite01>
+					<BatarianSoldier01>10</BatarianSoldier01>
+		            <BatarianElite01>10</BatarianElite01>
+					<VorchaSoldier01>10</VorchaSoldier01>
+					<VorchaElite01>10</VorchaElite01>
+	    </options>
+      </li>
+      <li>
+				<!-- Normal fights, melee-only -->
+        <kindDef>Normal</kindDef>
+        <commonality>25</commonality>
+        <disallowedStrategies>
+          <li>Siege</li>
+        </disallowedStrategies>
+        <options>
+					<MercenarySlasher>100</MercenarySlasher>
+                    <!-- -->
+					<KroganBrawler01>25</KroganBrawler01>
+		            <KroganEliteBrawler01>25</KroganEliteBrawler01>
+		</options>
+      </li>
+      <li>
+				<!-- Base defense -->
+				<kindDef>FactionBase</kindDef>
+        <options>
+          <Drifter>5</Drifter>
+					<GrenadierDestructive>20</GrenadierDestructive>
+					<Thrasher>70</Thrasher>
+					<MercenarySlasher>70</MercenarySlasher>
+					<MercenarySniper>80</MercenarySniper>
+					<Scavenger>90</Scavenger>
+					<Pirate>120</Pirate>
+					<MercenaryGunner>100</MercenaryGunner>
+					<MercenaryElite>100</MercenaryElite>
+                    <PirateBoss>100</PirateBoss>
+					<!-- -->
+		            <KroganSoldier01>10</KroganSoldier01>
+		            <KroganElite01>10</KroganElite01>
+		            <KroganEliteBrawler01>10</KroganEliteBrawler01>
+		            <KroganBrawler01>10</KroganBrawler01>
+		            <SalarianSoldier01>5</SalarianSoldier01>
+		            <SalarianElite01>5</SalarianElite01>
+					<TurianSoldier01>5</TurianSoldier01>
+					<TurianElite01>5</TurianElite01>
+					<BatarianSoldier01>10</BatarianSoldier01>
+		            <BatarianElite01>10</BatarianElite01>
+					<VorchaSoldier01>10</VorchaSoldier01>
+					<VorchaElite01>10</VorchaElite01>
+        </options>
+      </li>
+    </pawnGroupMakers>
+</value>
+</Operation>
+
+
+
+
+</Patch>

@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+	<AlienRace.BackstoryDef>
+    <defName>VChild01</defName>
+    <title>Sower</title>
+    <titleShort>Sower</titleShort>
+    <baseDescription>NAME knows how to sow a land for growing.</baseDescription>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>	
+	    <maleCommonality>5</maleCommonality>
+	    <femaleCommonality>5</femaleCommonality>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>3</amount>
+      </li>
+	  <li>
+        <defName>Growing</defName>
+        <amount>5</amount>
+      </li>
+	</skillGains>
+	<spawnCategories>
+      <li>VorchaBackstory</li>
+    </spawnCategories>
+	</AlienRace.BackstoryDef>
+  
+	<AlienRace.BackstoryDef>
+    <defName>VChild02</defName>
+    <title>Animal caretaker</title>
+    <titleShort>Animal caretaker</titleShort>
+    <baseDescription>NAME knows how to take care of animals.</baseDescription>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>	
+	    <maleCommonality>5</maleCommonality>
+	    <femaleCommonality>5</femaleCommonality>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Animals</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>2</amount>
+      </li>
+	</skillGains>
+	<spawnCategories>
+      <li>VorchaBackstory</li>
+    </spawnCategories>
+	</AlienRace.BackstoryDef>
+  
+	<AlienRace.BackstoryDef>
+    <defName>VChild03</defName>
+    <title>Blacksmith</title>
+    <titleShort>Blacksmith</titleShort>
+    <baseDescription>NAME knows how to craft tools and weapons.</baseDescription>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>	
+	    <maleCommonality>5</maleCommonality>
+	    <femaleCommonality>5</femaleCommonality>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>3</amount>
+      </li>
+	  <li>
+        <defName>Crafting</defName>
+        <amount>5</amount>
+      </li>
+	</skillGains>
+	<spawnCategories>
+      <li>VorchaBackstory</li>
+    </spawnCategories>
+	</AlienRace.BackstoryDef> 
+  
+	<AlienRace.BackstoryDef>
+    <defName>VChild04</defName>
+    <title>Pot master</title>
+    <titleShort>Pot master</titleShort>
+    <baseDescription>NAME knows how to take care a tribe's cooking pot.</baseDescription>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>	
+	    <maleCommonality>5</maleCommonality>
+	    <femaleCommonality>5</femaleCommonality>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>3</amount>
+      </li>
+	  <li>
+        <defName>Cooking</defName>
+        <amount>6</amount>
+      </li>
+	</skillGains>
+	<spawnCategories>
+      <li>VorchaBackstory</li>
+    </spawnCategories>
+	</AlienRace.BackstoryDef> 
+	
+	<AlienRace.BackstoryDef>
+    <defName>VChild05</defName>
+    <title>Lumberjack</title>
+    <titleShort>Lumberjack</titleShort>
+    <baseDescription>NAME knows how to cut trees and build.</baseDescription>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>	
+	    <maleCommonality>5</maleCommonality>
+	    <femaleCommonality>5</femaleCommonality>
+    <slot>Childhood</slot>
+    <skillGains>
+	  <li>
+        <defName>Melee</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>3</amount>
+      </li>
+	  <li>
+        <defName>Growing</defName>
+        <amount>3</amount>
+      </li>
+	</skillGains>
+	<spawnCategories>
+      <li>VorchaBackstory</li>
+    </spawnCategories>
+	</AlienRace.BackstoryDef> 
+	
+	<AlienRace.BackstoryDef>
+    <defName>VChild06</defName>
+    <title>Miner</title>
+    <titleShort>Miner</titleShort>
+    <baseDescription>NAME knows how to mine.</baseDescription>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>	
+	    <maleCommonality>10</maleCommonality>
+	    <femaleCommonality>10</femaleCommonality>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Mining</defName>
+        <amount>6</amount>
+      </li>
+	  <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+	</skillGains>
+	<spawnCategories>
+      <li>VorchaBackstory</li>
+    </spawnCategories>
+	</AlienRace.BackstoryDef> 
+	
+	<AlienRace.BackstoryDef>
+    <defName>VChild07</defName>
+    <title>Warrior</title>
+    <titleShort>Warrior</titleShort>
+    <baseDescription>NAME knows how to fight.</baseDescription>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>	
+	    <maleCommonality>80</maleCommonality>
+	    <femaleCommonality>80</femaleCommonality>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>4</amount>
+      </li>
+	  <li>
+        <defName>Melee</defName>
+        <amount>4</amount>
+      </li>
+	</skillGains>
+	<spawnCategories>
+      <li>VorchaBackstory</li>
+    </spawnCategories>
+	</AlienRace.BackstoryDef> 
+	
+		<AlienRace.BackstoryDef>
+    <defName>VChild08</defName>
+    <title>Brawler</title>
+    <titleShort>Brawler</titleShort>
+    <baseDescription>NAME knows how to fight in a melee.</baseDescription>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>	
+	    <maleCommonality>60</maleCommonality>
+	    <femaleCommonality>60</femaleCommonality>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>6</amount>
+      </li>
+	</skillGains>
+		<forcedTraits>
+        <li>
+            <defName>Brawler</defName>
+			<chance>75</chance>
+        </li>
+	</forcedTraits>
+	<spawnCategories>
+      <li>VorchaBackstory</li>
+    </spawnCategories>
+	</AlienRace.BackstoryDef> 
+	
+	<AlienRace.BackstoryDef>
+    <defName>VChild09</defName>
+    <title>Slave</title>
+    <titleShort>Slave</titleShort>
+    <baseDescription>NAME used to be a slave.</baseDescription>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>	
+	    <maleCommonality>5</maleCommonality>
+	    <femaleCommonality>5</femaleCommonality>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>-4</amount>
+      </li>
+	</skillGains>
+	<spawnCategories>
+      <li>VorchaBackstory</li>
+    </spawnCategories>
+	</AlienRace.BackstoryDef> 
+	
+	<AlienRace.BackstoryDef>
+    <defName>VChild10</defName>
+    <title>Hunter</title>
+    <titleShort>Hunter</titleShort>
+    <baseDescription>NAME knows how to hunt animals.</baseDescription>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>	
+	    <maleCommonality>60</maleCommonality>
+	    <femaleCommonality>60</femaleCommonality>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>5</amount>
+      </li>
+	  <li>
+        <defName>Animals</defName>
+        <amount>2</amount>
+      </li>
+	</skillGains>
+	<forcedTraits>
+        <li>
+            <defName>ShootingAccuracy</defName>
+            <degree>1</degree>
+			<chance>30</chance>
+        </li>
+	</forcedTraits>
+	<spawnCategories>
+      <li>VorchaBackstory</li>
+    </spawnCategories>
+	</AlienRace.BackstoryDef> 
+	
+	<AlienRace.BackstoryDef>
+    <defName>VChild11</defName>
+    <title>Fighter</title>
+    <titleShort>Fighter</titleShort>
+    <baseDescription>NAME knows how to fight.</baseDescription>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>	
+	    <maleCommonality>80</maleCommonality>
+	    <femaleCommonality>80</femaleCommonality>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>4</amount>
+      </li>
+	        <li>
+        <defName>Melee</defName>
+        <amount>4</amount>
+      </li>
+	</skillGains>
+    <spawnCategories>
+      <li>VorchaBackstory</li>
+    </spawnCategories>
+	</AlienRace.BackstoryDef> 
+	
+	<AlienRace.BackstoryDef>
+    <defName>VChild12</defName>
+    <title>Respected warrior</title>
+    <titleShort>Respected warrior</titleShort>
+    <baseDescription>NAME knows how to fight very well.</baseDescription>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>	
+	    <maleCommonality>15</maleCommonality>
+	    <femaleCommonality>15</femaleCommonality>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>6</amount>
+      </li>
+	  <li>
+        <defName>Melee</defName>
+        <amount>6</amount>
+      </li>
+	</skillGains>
+	<spawnCategories>
+      <li>VorchaBackstory</li>
+    </spawnCategories>
+	</AlienRace.BackstoryDef> 
+	
+  	<AlienRace.BackstoryDef>
+    <defName>VChild13</defName>
+    <title>Inferior warrior</title>
+    <titleShort>Inferior warrior</titleShort>
+    <baseDescription>NAME is not that good at doing battle.</baseDescription>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>	
+	    <maleCommonality>50</maleCommonality>
+	    <femaleCommonality>50</femaleCommonality>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+	  <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+	</skillGains>
+	<spawnCategories>
+      <li>VorchaBackstory</li>
+    </spawnCategories>
+	</AlienRace.BackstoryDef> 
+  
+   	<AlienRace.BackstoryDef>
+    <defName>VChild14</defName>
+    <title>Eliteborn</title>
+    <titleShort>Eliteborn</titleShort>
+    <baseDescription>NAME is a once in a decade anomaly. He fights so well, even an average krogan wouldn't stand a chance.</baseDescription>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>	
+	    <maleCommonality>0.01</maleCommonality>
+	    <femaleCommonality>0.01</femaleCommonality>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>14</amount>
+      </li>
+	        <li>
+        <defName>Shooting</defName>
+        <amount>14</amount>
+      </li>
+	</skillGains>
+	<spawnCategories>
+      <li>VorchaBackstory</li>
+    </spawnCategories>
+	</AlienRace.BackstoryDef> 
+  
+    <AlienRace.BackstoryDef>
+    <defName>VChild15</defName>
+    <title>Speaker</title>
+    <titleShort>Speaker</titleShort>
+    <baseDescription>NAME knows how to negotiate for a tribe.</baseDescription>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>	
+	    <maleCommonality>5</maleCommonality>
+	    <femaleCommonality>5</femaleCommonality>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>6</amount>
+      </li>
+	</skillGains>
+	<spawnCategories>
+      <li>VorchaBackstory</li>
+    </spawnCategories>
+	</AlienRace.BackstoryDef> 
+  
+   	<AlienRace.BackstoryDef>
+    <defName>VChild16</defName>
+    <title>Shaman</title>
+    <titleShort>Shaman</titleShort>
+    <baseDescription>NAME knows how to apply leaves on a wound.</baseDescription>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>	
+	    <maleCommonality>5</maleCommonality>
+	    <femaleCommonality>5</femaleCommonality>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>1</amount>
+      </li>
+	  <li>
+        <defName>Medicine</defName>
+        <amount>3</amount>
+      </li>
+	</skillGains>
+	<spawnCategories>
+      <li>VorchaBackstory</li>
+    </spawnCategories>
+	</AlienRace.BackstoryDef> 
+  
+  	<AlienRace.BackstoryDef>
+    <defName>VAdult01</defName>
+    <title>Elder</title>
+    <titleShort>Elder</titleShort>
+    <baseDescription>NAME is a very old Vorcha.</baseDescription>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>	
+	    <maleCommonality>100</maleCommonality>
+	    <femaleCommonality>100</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>20</amount>
+      </li>
+	</skillGains>
+	<spawnCategories>
+      <li>VorchaBackstory</li>
+    </spawnCategories>
+	</AlienRace.BackstoryDef> 
+  
+  </Defs>

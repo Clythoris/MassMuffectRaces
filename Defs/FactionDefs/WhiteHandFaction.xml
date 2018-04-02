@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<FactionDef>
+		<defName>WhiteHandFaction</defName>
+		<label>White Hand</label>
+		<description>The White Hand is a varigatetion of krogan and vorcha people led by the wizard of the White Hand.
+	
+They mostly live simple lives. Doing agricultural work, hunting and picking. Though these tribals enjoy firing guns and smashing skulls which leads them to often raiding nearby civiliziations.
+	
+The wizard holds complete power over his people, and is feared and respected by them. He is believed to posses incredible magical powers. Although some say that he just a krogan in a fake beard.</description>
+		<pawnsPlural>Tribals</pawnsPlural>
+		<fixedName>White Hand</fixedName>
+		
+		<baseSelectionWeight>1</baseSelectionWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		
+		<homeIconPath>World/WorldObjects/DefaultFactionBase</homeIconPath>
+		<expandingIconTexture>World/WorldObjects/HandFlag01</expandingIconTexture>
+		
+		<canMakeRandomly>true</canMakeRandomly>
+		<canStageAttacks>true</canStageAttacks>
+		
+		<!--<factionNameMaker>NamerFaction</factionNameMaker>-->
+		<baseNameMaker>NamerFactionBaseOutlander</baseNameMaker>
+		<techLevel>Industrial</techLevel>
+		<backstoryCategory>KroganBackstory</backstoryCategory>		
+
+		<hairTags>
+			<li>KroganHair</li>
+		</hairTags>
+		
+		<startingGoodwill>
+			<min>-100</min>
+			<max>-90</max>
+		</startingGoodwill>
+		<naturalColonyGoodwill>
+			<min>-100</min>
+			<max>-90</max>
+		</naturalColonyGoodwill>
+
+		<visitorTraderKinds>
+			<li>Visitor_Neolithic_Standard</li>
+		</visitorTraderKinds>
+		<caravanTraderKinds>
+   <li>Caravan_Neolithic_Slaver</li>
+   <li>Caravan_Neolithic_BulkGoods</li>
+		</caravanTraderKinds>
+		<baseTraderKinds>
+			<li>Base_Neolithic_Standard</li>
+		</baseTraderKinds>
+		
+        <colorSpectrum>
+         <li>(0.827, 0.827, 0.827)</li>
+        </colorSpectrum>
+
+		<mustStartOneEnemy>true</mustStartOneEnemy>
+		<leaderTitle>Wizard</leaderTitle>
+
+		<allowedArrivalTemperatureRange>
+			<min>-20</min>
+			<max>50</max>
+		</allowedArrivalTemperatureRange>
+		
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Normal</kindDef>
+        <options>
+		  <VorchaWhiteHandSoldier01>60</VorchaWhiteHandSoldier01>
+		  <VorchaWhiteHandElite01>60</VorchaWhiteHandElite01>
+		  <KroganWhiteHandSoldier01>20</KroganWhiteHandSoldier01>
+		  <KroganWhiteHandElite01>20</KroganWhiteHandElite01>
+		  <KroganWhiteHandWizard01>1</KroganWhiteHandWizard01> 
+		</options>
+      </li>
+	  <li>
+      <kindDef>Trader</kindDef>
+        <traders>
+          <KroganTrader01>1</KroganTrader01>
+        </traders>
+        <carriers>
+          <Muffalo>4</Muffalo>
+        </carriers>
+        <guards>
+           <VorchaWhiteHandSoldier01>60</VorchaWhiteHandSoldier01>
+           <KroganWhiteHandSoldier01>20</KroganWhiteHandSoldier01>
+        </guards>
+      </li> 
+	  <li>
+        <kindDef>FactionBase</kindDef>
+        <options>
+		  <VorchaWhiteHandSoldier01>60</VorchaWhiteHandSoldier01>
+		  <VorchaWhiteHandElite01>60</VorchaWhiteHandElite01>
+          <KroganWhiteHandSoldier01>20</KroganWhiteHandSoldier01>
+		  <KroganWhiteHandElite01>20</KroganWhiteHandElite01>
+		  <KroganWhiteHandWizard01>1</KroganWhiteHandWizard01>  
+        </options>
+      </li>
+    </pawnGroupMakers>
+	</FactionDef>
+	  
+	
+</Defs>

@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<FactionDef>
+		<defName>TurianFaction</defName>
+		<label>Turian Grmoo</label>
+		<description>The turians created a military installation on this planet a time ago to keep watch over the activities around this sector. After a while this sector has become quiet and the outpost was forgotten about. Some turians left for their homeworlds, but most remained and settled in.</description>
+		<pawnsPlural>Turian</pawnsPlural>
+		<fixedName>Turian Grmoo</fixedName>
+		
+		<baseSelectionWeight>1</baseSelectionWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		
+		<homeIconPath>World/WorldObjects/DefaultFactionBase</homeIconPath>
+		<expandingIconTexture>World/WorldObjects/TurianFlag01</expandingIconTexture>
+		
+		<canMakeRandomly>true</canMakeRandomly>
+		<canStageAttacks>true</canStageAttacks>
+        <canSiege>true</canSiege>
+		
+		<!--<factionNameMaker>NamerFaction</factionNameMaker>-->
+		<baseNameMaker>NamerFactionBaseOutlander</baseNameMaker>
+		<techLevel>Spacer</techLevel>
+		<backstoryCategory>TurianBackstory</backstoryCategory>		
+
+		<hairTags>
+			<li>TurianHair</li>
+		</hairTags>
+		
+		<startingGoodwill>
+			<min>-80</min>
+			<max>40</max>
+		</startingGoodwill>
+		<naturalColonyGoodwill>
+			<min>-80</min>
+			<max>40</max>
+		</naturalColonyGoodwill>
+
+		<visitorTraderKinds>
+			<li>Visitor_Outlander_Standard</li>
+		</visitorTraderKinds>
+		<caravanTraderKinds>
+      <li>Caravan_Outlander_BulkGoods</li>
+      <li>Caravan_Outlander_CombatSupplier</li>
+      <li>Caravan_Outlander_Exotic</li>
+		</caravanTraderKinds>
+		<baseTraderKinds>
+			<li>Base_Outlander_Standard</li>
+		</baseTraderKinds>
+		
+        <colorSpectrum>
+         <li>(0.914, 0.588, 0.478)</li>
+        </colorSpectrum>
+
+		<mustStartOneEnemy>false</mustStartOneEnemy>
+		<leaderTitle>General</leaderTitle>
+
+		<allowedArrivalTemperatureRange>
+			<min>-15</min>
+			<max>40</max>
+		</allowedArrivalTemperatureRange>
+		
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Normal</kindDef>
+        <options>
+          <TurianColonist01>50</TurianColonist01>
+		  <TurianSoldier01>60</TurianSoldier01>
+		  <TurianElite01>25</TurianElite01>
+		  <TurianCaptain01>10</TurianCaptain01>
+	   	  <TurianGeneral01>1</TurianGeneral01>
+        </options>
+      </li>
+	  <li>
+      <kindDef>Trader</kindDef>
+        <traders>
+          <TurianTrader01>1</TurianTrader01>
+        </traders>
+        <carriers>
+          <Elephant>4</Elephant>
+        </carriers>
+        <guards>
+          <TurianColonist01>90</TurianColonist01>
+		  <TurianSoldier01>60</TurianSoldier01>
+        </guards>
+      </li>
+	  <li>
+        <kindDef>FactionBase</kindDef>
+        <options>
+		  <TurianSoldier01>60</TurianSoldier01>
+		  <TurianElite01>25</TurianElite01>
+		  <TurianColonist01>50</TurianColonist01>
+		  <TurianCaptain01>10</TurianCaptain01>
+		  <TurianGeneral01>1</TurianGeneral01>
+        </options>
+      </li>
+    </pawnGroupMakers>
+	</FactionDef>
+	  
+	
+</Defs>

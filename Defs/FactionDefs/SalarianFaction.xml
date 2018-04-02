@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<FactionDef>
+		<defName>SalarianFaction</defName>
+		<label>Salarian Q</label>
+		<description>Following the implosion of their star, the salarian council moved some of the population onto this planet to colonize it. Because of a life presence scanner malfunction they didn't realize that the planet was occupied until they have already gotten here. A vote was struck to settle here after the strenuous journey they had just undergone. 
+	The salarian residence here is quite new, but has spread tall and wide very quickly.</description>
+		<pawnsPlural>Salarian</pawnsPlural>
+		<fixedName>Salarian Q</fixedName>
+		
+		<baseSelectionWeight>1</baseSelectionWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		
+		<homeIconPath>World/WorldObjects/DefaultFactionBase</homeIconPath>
+		<expandingIconTexture>World/WorldObjects/SalarianFlag01</expandingIconTexture>
+		
+		<canMakeRandomly>true</canMakeRandomly>
+		<canStageAttacks>true</canStageAttacks>
+        <canSiege>true</canSiege>
+		
+		<!--<factionNameMaker>NamerFaction</factionNameMaker>-->
+		<baseNameMaker>NamerFactionBaseOutlander</baseNameMaker>
+		<techLevel>Spacer</techLevel>
+		<backstoryCategory>SalarianBackstory</backstoryCategory>		
+
+		<hairTags>
+			<li>SalarianHair</li>
+		</hairTags>
+		
+		<startingGoodwill>
+			<min>-80</min>
+			<max>50</max>
+		</startingGoodwill>
+		<naturalColonyGoodwill>
+			<min>-80</min>
+			<max>50</max>
+		</naturalColonyGoodwill>
+
+		<visitorTraderKinds>
+			<li>Visitor_Outlander_Standard</li>
+		</visitorTraderKinds>
+		<caravanTraderKinds>
+      <li>Caravan_Outlander_BulkGoods</li>
+      <li>Caravan_Outlander_CombatSupplier</li>
+      <li>Caravan_Outlander_Exotic</li>
+		</caravanTraderKinds>
+		<baseTraderKinds>
+			<li>Base_Outlander_Standard</li>
+		</baseTraderKinds>
+		
+        <colorSpectrum>
+         <li>(0.46,0.46,0.46)</li>
+        </colorSpectrum>
+
+		<mustStartOneEnemy>false</mustStartOneEnemy>
+		<leaderTitle>Councillor</leaderTitle>
+
+		<allowedArrivalTemperatureRange>
+			<min>-15</min>
+			<max>40</max>
+		</allowedArrivalTemperatureRange>
+		
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Normal</kindDef>
+        <options>
+          <SalarianColonist01>50</SalarianColonist01>
+		  <SalarianSoldier01>60</SalarianSoldier01>
+		  <SalarianElite01>25</SalarianElite01>
+		  <SalarianCaptain01>10</SalarianCaptain01>
+	   	  <SalarianCouncillor01>1</SalarianCouncillor01>
+        </options>
+      </li>
+	  <li>
+      <kindDef>Trader</kindDef>
+        <traders>
+          <SalarianTrader01>1</SalarianTrader01>
+        </traders>
+        <carriers>
+          <Muffalo>4</Muffalo>
+        </carriers>
+        <guards>
+          <SalarianColonist01>90</SalarianColonist01>
+		  <SalarianSoldier01>60</SalarianSoldier01>
+        </guards>
+      </li>
+	  <li>
+        <kindDef>FactionBase</kindDef>
+        <options>
+		  <SalarianSoldier01>60</SalarianSoldier01>
+		  <SalarianElite01>25</SalarianElite01>
+		  <SalarianColonist01>50</SalarianColonist01>
+		  <SalarianCaptain01>10</SalarianCaptain01>
+		  <SalarianCouncillor01>1</SalarianCouncillor01>
+        </options>
+      </li>
+    </pawnGroupMakers>
+	</FactionDef>
+	  
+	
+</Defs>

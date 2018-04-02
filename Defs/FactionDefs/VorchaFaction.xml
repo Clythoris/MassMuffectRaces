@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<FactionDef>
+		<defName>VorchaFaction</defName>
+		<label>Vorcha Tribes</label>
+		<description>Autonomous tribes of the Vorcha race.</description>
+		<pawnsPlural>Vorcha</pawnsPlural>
+		<fixedName>Vorcha Tribes</fixedName>
+		
+		<baseSelectionWeight>0</baseSelectionWeight>
+		<requiredCountAtGameStart>0</requiredCountAtGameStart>
+		
+		<homeIconPath>World/WorldObjects/DefaultFactionBase</homeIconPath>
+		<expandingIconTexture>World/WorldObjects/VorchaFlag01</expandingIconTexture>
+		
+		<canMakeRandomly>false</canMakeRandomly>
+		<canStageAttacks>true</canStageAttacks>
+        <canSiege>false</canSiege>
+		
+		<!--<factionNameMaker>NamerFaction</factionNameMaker>-->
+		<baseNameMaker>NamerFactionBaseOutlander</baseNameMaker>
+		<techLevel>Industrial</techLevel>
+		<backstoryCategory>VorchaBackstory</backstoryCategory>		
+
+		<hairTags>
+			<li>VorchaHair</li>
+		</hairTags>
+		
+		<startingGoodwill>
+			<min>-80</min>
+			<max>-25</max>
+		</startingGoodwill>
+		<naturalColonyGoodwill>
+			<min>-80</min>
+			<max>-20</max>
+		</naturalColonyGoodwill>
+
+		<visitorTraderKinds>
+			<li>Visitor_Outlander_Standard</li>
+		</visitorTraderKinds>
+		<caravanTraderKinds>
+      <li>Caravan_Neolithic_Slaver</li>
+		</caravanTraderKinds>
+		<baseTraderKinds>
+			<li>Base_Outlander_Standard</li>
+		</baseTraderKinds>
+		
+        <colorSpectrum>
+      <li>(0.4, 0.92, 0.35)</li>
+      <li>(0.89, 0.89, 0.7)</li>
+      <li>(1, 1, 0.1)</li>
+        </colorSpectrum>
+
+		<mustStartOneEnemy>false</mustStartOneEnemy>
+		<leaderTitle>Chief</leaderTitle>
+
+		<allowedArrivalTemperatureRange>
+			<min>-15</min>
+			<max>40</max>
+		</allowedArrivalTemperatureRange>
+		
+<pawnGroupMakers>
+<li>
+        <kindDef>Normal</kindDef>
+        <options>
+          <VorchaColonist01>50</VorchaColonist01>
+		  <VorchaSoldier01>60</VorchaSoldier01>
+		  <VorchaElite01>70</VorchaElite01>
+		  <VorchaChief01>70</VorchaChief01>
+		</options>
+      </li>
+      <li>
+        <kindDef>FactionBase</kindDef>
+        <options>
+          <VorchaColonist01>100</VorchaColonist01>
+		  <VorchaSoldier01>60</VorchaSoldier01>
+		  <VorchaElite01>70</VorchaElite01>
+          <VorchaChief01>70</VorchaChief01>
+		</options>
+      </li>
+</pawnGroupMakers>
+	</FactionDef>
+	  
+	
+</Defs>

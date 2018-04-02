@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+    <defName>AlienVorcha</defName>
+    <label>Vorcha</label>
+    
+    <description>The Vorcha are an agressive and biologically very unique race. Their genetic makeup makes them very resilliant to outside influences, but shortens their lifespans significantly.
+	
+	</description>
+        
+    <statBases>
+		<PsychicSensitivity>1.0</PsychicSensitivity>
+		<ToxicSensitivity>1.0</ToxicSensitivity>
+		<ComfyTemperatureMin>-20</ComfyTemperatureMin>
+		<ComfyTemperatureMax>60</ComfyTemperatureMax>
+		<LeatherAmount>25</LeatherAmount>
+		<MarketValue>800</MarketValue>
+		<MoveSpeed>4.6</MoveSpeed>
+		<Flammability>1.0</Flammability>
+		
+		<CarryingCapacity>75</CarryingCapacity>
+		<MentalBreakThreshold>0.01</MentalBreakThreshold>
+
+		<SocialImpact>1.0</SocialImpact>
+		<PlantWorkSpeed>1.0</PlantWorkSpeed>
+		<PlantHarvestYield>1.0</PlantHarvestYield>
+		<ResearchSpeed>1.0</ResearchSpeed>
+		
+		<MiningSpeed>1.0</MiningSpeed>
+		<MiningYield>1.0</MiningYield>
+		<ConstructionSpeed>1.0</ConstructionSpeed>
+		<ConstructSuccessChance>1.0</ConstructSuccessChance>
+		<DrugProductionSpeed>1.0</DrugProductionSpeed>		
+		<SmeltingSpeed>1.0</SmeltingSpeed>
+		<SmithingSpeed>1.0</SmithingSpeed>
+		<TailoringSpeed>1.0</TailoringSpeed>
+
+		<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+		<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+
+		<ShootingAccuracy>1.0</ShootingAccuracy>
+		<MeleeHitChance>1.0</MeleeHitChance>
+		<MeleeDodgeChance>1.0</MeleeDodgeChance>
+		
+    </statBases>
+
+	<verbs>
+			<li>
+			<verbClass>Verb_MeleeAttack</verbClass>
+			<defaultCooldownTime>2</defaultCooldownTime>
+			<meleeDamageBaseAmount>4</meleeDamageBaseAmount>
+			<meleeDamageDef>Blunt</meleeDamageDef>
+			<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+		</li>
+		<li>
+			<verbClass>Verb_MeleeAttack</verbClass>
+			<defaultCooldownTime>2</defaultCooldownTime>
+			<meleeDamageBaseAmount>4</meleeDamageBaseAmount>
+			<meleeDamageDef>Blunt</meleeDamageDef>
+			<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+		</li>
+		<li>
+			<verbClass>Verb_MeleeAttack</verbClass>
+			<defaultCooldownTime>3</defaultCooldownTime>
+			<meleeDamageBaseAmount>6</meleeDamageBaseAmount>
+			<meleeDamageDef>Blunt</meleeDamageDef>
+			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+		    <commonality>0.2</commonality>
+			<surpriseAttack>
+			<extraMeleeDamages>
+				<li>
+				<def>Stun</def>
+				<amount>10</amount>
+				</li>
+			</extraMeleeDamages>
+			</surpriseAttack>
+		</li>
+
+		
+	</verbs>
+
+	<alienRace>
+
+	<generalSettings>
+		<humanRecipeImport>true</humanRecipeImport>
+
+	
+		<!-- <pawnsSpecificBackstories>true</pawnsSpecificBackstories> -->
+		<pawnsSpecificBackstories>false</pawnsSpecificBackstories>
+		<alienPartGenerator>
+			<!-- -->
+			<alienbodytypes>
+				<li>Thin</li>
+			</alienbodytypes>
+			<!-- -->
+			<useGenderedHeads>true</useGenderedHeads>
+			<useGenderedBodies>true</useGenderedBodies>
+			<aliencrowntypes>
+                    <li>Average_Normal_01</li>
+					<li>Average_Normal_02</li>
+					<li>Average_Normal_03</li>
+					<li>Average_Normal_04</li>
+					<li>Average_Normal_05</li>
+					<li>Average_Normal_06</li>
+					<li>Average_Normal_07</li>
+					<li>Average_Normal_08</li>
+					<li>Average_Normal_09</li>
+			</aliencrowntypes>
+			
+				 <customDrawSize>(1.5, 1.15)</customDrawSize>
+                 <customHeadDrawSize>(1.0, 0.95)</customHeadDrawSize>
+				 <customPortraitDrawSize>(1.5, 1.15)</customPortraitDrawSize>
+                 <customPortraitHeadDrawSize>(1.0, 0.95)</customPortraitHeadDrawSize>
+			<alienskincolorgen Class="ColorGenerator_Options">
+				<options>
+				<!-- brown -->
+					<li><weight>2</weight><only>RGBA(1.0,1.0,1.0,1)</only></li>
+					<li><weight>10</weight><only>RGBA(1.000, 0.894, 0.710,1)</only></li>
+					<li><weight>5</weight><only>RGBA(0.863, 0.863, 0.863,1)</only></li>
+					<li><weight>3</weight><only>RGBA(1.000, 0.937, 0.835,1)</only></li>
+					<li><weight>3</weight><only>RGBA(1.000, 1.000, 0.878,1)</only></li>
+				</options>
+			</alienskincolorgen>
+			
+		</alienPartGenerator>
+
+		<maleGenderProbability>10.0</maleGenderProbability>    
+		<!--<forcedRaceTraitEntries>
+			<li><defName>Bloodlust</defName><chance>10</chance></li>
+			</forcedRaceTraitEntries>-->
+	</generalSettings>    
+
+	<graphicPaths>
+		<li>
+			<body>Vorcha/Body/</body>
+			<head>Vorcha/HeadBase/</head>
+		</li>
+	</graphicPaths>
+
+	<hairSettings>
+		<hasHair>false</hasHair>
+	</hairSettings>
+
+	<relationSettings>
+	</relationSettings>
+
+	<pawnKindSettings>
+		<alienslavekinds>
+			<li>
+				<kindDefs>
+					<li>VorchaSlave01</li>
+				</kindDefs>
+				<chance>20.0</chance>
+			</li>
+		</alienslavekinds>
+		<alienrefugeekinds>
+			<li>
+				<kindDefs>
+					<li>VorchaRefugee01</li>
+				</kindDefs>
+				<chance>20.0</chance>
+			</li>
+		</alienrefugeekinds>
+		<startingColonists>
+			<li>
+			<pawnKindEntries>
+				<li>
+				<kindDefs>
+					<li>VorchaColonist01</li>
+				</kindDefs>
+				<chance>0.0</chance>
+				</li>
+			</pawnKindEntries>
+				<factionDefs>
+					<li>VorchaPlayerColony</li>
+					<li>PlayerColony</li>
+				</factionDefs>
+			</li>
+		</startingColonists>
+		<alienwandererkinds>
+			<li>
+				<pawnKindEntries>
+					<li>
+						<kindDefs>
+							<li>VorchaSoldier01</li>
+							<li>VorchaColonist01</li>
+						</kindDefs>
+						<chance>20.0</chance>
+					</li>
+				</pawnKindEntries>
+				<factionDefs>
+					<li>VorchaPlayerColony</li> 
+				</factionDefs>
+			</li>
+		</alienwandererkinds>
+	</pawnKindSettings>
+ 
+	<thoughtSettings>
+		<cannotReceiveThoughts></cannotReceiveThoughts>
+		<ateThoughtSpecific></ateThoughtSpecific>
+		<replacerList></replacerList>
+	</thoughtSettings>
+
+	<raceRestriction>
+	</raceRestriction>
+
+</alienRace>
+    
+<race>
+	<thinkTreeMain>Humanlike</thinkTreeMain>
+	<nameGenerator>NamerPersonVorcha</nameGenerator>
+	<nameGeneratorFemale>NamerPersonVorchaFemale</nameGeneratorFemale>
+	<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+	<intelligence>Humanlike</intelligence>
+	<makesFootprints>true</makesFootprints>
+	<lifeExpectancy>13</lifeExpectancy>
+	<useLeatherFrom>Human</useLeatherFrom>
+	<bloodDef></bloodDef>
+	<nameCategory>HumanStandard</nameCategory>
+	<body>Human</body>
+	<baseBodySize>1.0</baseBodySize>
+	<baseHealthScale>1.0</baseHealthScale>
+	<baseHungerRate>0.5</baseHungerRate>
+	<foodType>OmnivoreHuman</foodType>
+
+
+	<gestationPeriodDays>45</gestationPeriodDays>
+      <litterSizeCurve>
+		<points>
+		<li>(0.5, 0)</li>
+		<li>(1, 1)</li>
+		<li>(1.01, 0.02)</li>
+		<li>(3.5, 0)</li>
+		</points>
+      </litterSizeCurve>
+      <lifeStageAges>
+        <li>
+          <def>VorchaBabyStage</def>
+          <minAge>1</minAge>
+        </li>
+        <li>
+          <def>VorchaChildStage</def>
+          <minAge>3</minAge>
+        </li>
+        <li>
+          <def>VorchaAdultStage1</def>
+          <minAge>5</minAge>
+        </li>
+		<li>
+          <def>VorchaAdultStage2</def>
+          <minAge>10</minAge>
+        </li>
+		<li>
+          <def>VorchaOldStage1</def>
+          <minAge>12</minAge>
+        </li>
+		<li>
+          <def>VorchaOldStage2</def>
+          <minAge>13</minAge>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+      <specialShadowData>
+        <volume>(0.3, 0.8, 0.4)</volume>
+        <offset>(0,0,-0.3)</offset>
+      </specialShadowData>
+      <ageGenerationCurve>
+        <points>
+          <li>(3,0)</li>
+          <li>(4,2)</li>
+		  <li>(5,10)</li>
+		  <li>(6,25)</li>
+		  <li>(7,35)</li>
+		  <li>(8,25)</li>
+		  <li>(9,10)</li>
+		  <li>(11,5)</li>
+		  <li>(13,0)</li>
+        </points>
+      </ageGenerationCurve>
+      <hediffGiverSets>
+        <li>OrganicStandard</li>
+      </hediffGiverSets>
+</race>
+    <recipes>
+
+		<li>InstallPowerClaw</li>
+		<li>InstallScytherBlade</li>
+		<li>InstallBionicEye</li>
+		<li>InstallBionicArm</li>
+		<li>InstallBionicLeg</li>
+		<li>InstallSimpleProstheticArm</li>
+		<li>InstallSimpleProstheticLeg</li>
+		<li>InstallPegLeg</li>
+		<li>InstallDenture</li>
+		<li>InstallJoywire</li>
+		<li>InstallPainstopper</li>
+		<li>InstallNaturalHeart</li>
+		<li>InstallNaturalLung</li>
+		<li>InstallNaturalKidney</li>
+		<li>InstallNaturalLiver</li>
+		<li>AdministerMechSerumHealer</li>
+		<li>ExciseCarcinoma</li>
+		<li>RemoveBodyPart</li>
+		<li>Euthanize</li>
+		<li>Anesthetize</li>
+    </recipes>
+    
+</AlienRace.ThingDef_AlienRace>
+</Defs>

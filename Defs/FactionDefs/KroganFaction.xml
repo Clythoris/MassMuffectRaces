@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<FactionDef>
+		<defName>KroganFaction</defName>
+		<label>Krogan Wazoo</label>
+		<description>A long time ago a krogan convoy crashed onto this planet and after being unable to get back into space, they decided to settle here and return to their original(albeit primitive) way of living.</description>
+		<pawnsPlural>Krogan</pawnsPlural>
+		<fixedName>Krogan Wazoo</fixedName>
+		
+		<baseSelectionWeight>1</baseSelectionWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		
+		<homeIconPath>World/WorldObjects/DefaultFactionBase</homeIconPath>
+		<expandingIconTexture>World/WorldObjects/KroganFlag01</expandingIconTexture>
+		
+		<canMakeRandomly>true</canMakeRandomly>
+		<canStageAttacks>true</canStageAttacks>
+        <canSiege>true</canSiege>
+		
+		<!--<factionNameMaker>NamerFaction</factionNameMaker>-->
+		<baseNameMaker>NamerFactionBaseOutlander</baseNameMaker>
+		<techLevel>Industrial</techLevel>
+		<backstoryCategory>KroganBackstory</backstoryCategory>		
+
+		<hairTags>
+			<li>KroganHair</li>
+		</hairTags>
+		
+		<startingGoodwill>
+			<min>-80</min>
+			<max>10</max>
+		</startingGoodwill>
+		<naturalColonyGoodwill>
+			<min>-80</min>
+			<max>10</max>
+		</naturalColonyGoodwill>
+
+		<visitorTraderKinds>
+			<li>Visitor_Outlander_Standard</li>
+		</visitorTraderKinds>
+		<caravanTraderKinds>
+      <li>Caravan_Neolithic_Slaver</li>
+      <li>Caravan_Outlander_CombatSupplier</li>
+      <li>Caravan_Outlander_PirateMerchant</li>
+		</caravanTraderKinds>
+		<baseTraderKinds>
+			<li>Base_Outlander_Standard</li>
+		</baseTraderKinds>
+		
+        <colorSpectrum>
+         <li>(0.827, 0.827, 0.827)</li>
+        </colorSpectrum>
+
+		<mustStartOneEnemy>false</mustStartOneEnemy>
+		<leaderTitle>Leader</leaderTitle>
+
+		<allowedArrivalTemperatureRange>
+			<min>-25</min>
+			<max>45</max>
+		</allowedArrivalTemperatureRange>
+		
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Normal</kindDef>
+        <options>
+          <KroganColonist01>50</KroganColonist01>
+		  <KroganSoldier01>60</KroganSoldier01>
+		  <KroganBrawler01>40</KroganBrawler01>
+		  <KroganElite01>25</KroganElite01>
+		  <KroganEliteBrawler01>25</KroganEliteBrawler01>
+		  <KroganCaptain01>10</KroganCaptain01>
+	   	  <KroganLeader01>1</KroganLeader01>
+        </options>
+      </li>
+	  <li>
+      <kindDef>Trader</kindDef>
+        <traders>
+          <KroganTrader01>1</KroganTrader01>
+        </traders>
+        <carriers>
+          <Muffalo>5</Muffalo>
+        </carriers>
+        <guards>
+          <KroganColonist01>90</KroganColonist01>
+		  <KroganSoldier01>60</KroganSoldier01>
+          <KroganBrawler01>40</KroganBrawler01>
+		</guards>
+      </li>
+	  <li>
+        <kindDef>FactionBase</kindDef>
+        <options>
+          <KroganColonist01>50</KroganColonist01>
+		  <KroganSoldier01>60</KroganSoldier01>
+		  <KroganBrawler01>40</KroganBrawler01>
+		  <KroganElite01>25</KroganElite01>
+		  <KroganEliteBrawler01>25</KroganEliteBrawler01>
+		  <KroganCaptain01>10</KroganCaptain01>
+	   	  <KroganLeader01>1</KroganLeader01>
+        </options>
+      </li>
+    </pawnGroupMakers>
+	</FactionDef>
+	  
+	
+</Defs>

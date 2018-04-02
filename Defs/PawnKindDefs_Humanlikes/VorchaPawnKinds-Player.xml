@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef Abstract="True" Name="VorchaPlayerBase">
+		<race>AlienVorcha</race>
+		<combatPower>40</combatPower>
+		<baseRecruitDifficulty>0.70</baseRecruitDifficulty>
+		<isFighter>false</isFighter>
+		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="VorchaPlayerBase">
+		<defName>Vorcha</defName>
+		<label>colonist</label>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<backstoryCategory>VorchaBackstory</backstoryCategory>
+		<apparelAllowHeadwearChance>0.5</apparelAllowHeadwearChance>
+		<apparelTags>
+			<li>Tribal</li>
+		</apparelTags>
+		<apparelMoney>
+			<min>150</min>
+			<max>300</max>
+		</apparelMoney>
+		<backstoryCryptosleepCommonality>0.1</backstoryCryptosleepCommonality>
+	</PawnKindDef>
+
+</Defs>

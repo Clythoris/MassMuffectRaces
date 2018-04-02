@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+    <defName>AlienTurian</defName>
+    <label>Turian</label>
+    
+    <description>The Turian are known to be a militaristic and disciplined people with a desire for order. Biologically they resemble humanoid dinosaurs.
+	
+	</description>
+        
+    <statBases>
+		<PsychicSensitivity>1.0</PsychicSensitivity>
+		<ToxicSensitivity>1.0</ToxicSensitivity>
+		<ComfyTemperatureMin>14</ComfyTemperatureMin>
+		<ComfyTemperatureMax>30</ComfyTemperatureMax>
+		<LeatherAmount>25</LeatherAmount>
+		<MarketValue>1500</MarketValue>
+		<MoveSpeed>4.6</MoveSpeed>
+		<Flammability>1.0</Flammability>
+		
+		<CarryingCapacity>75</CarryingCapacity>
+		<MentalBreakThreshold>0.01</MentalBreakThreshold>
+
+		<SocialImpact>1.0</SocialImpact>
+		<PlantWorkSpeed>1.0</PlantWorkSpeed>
+		<PlantHarvestYield>1.0</PlantHarvestYield>
+		<ResearchSpeed>1.0</ResearchSpeed>
+		
+		<MiningSpeed>1.0</MiningSpeed>
+		<MiningYield>1.0</MiningYield>
+		<ConstructionSpeed>1.0</ConstructionSpeed>
+		<ConstructSuccessChance>1.0</ConstructSuccessChance>
+		<DrugProductionSpeed>1.0</DrugProductionSpeed>		
+		<SmeltingSpeed>1.0</SmeltingSpeed>
+		<SmithingSpeed>1.0</SmithingSpeed>
+		<TailoringSpeed>1.0</TailoringSpeed>
+
+		<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+		<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+
+		<ShootingAccuracy>1.2</ShootingAccuracy>
+		<MeleeHitChance>1.0</MeleeHitChance>
+		<MeleeDodgeChance>1.0</MeleeDodgeChance>
+		
+    </statBases>
+
+	<verbs>
+			<li>
+			<verbClass>Verb_MeleeAttack</verbClass>
+			<defaultCooldownTime>2</defaultCooldownTime>
+			<meleeDamageBaseAmount>4</meleeDamageBaseAmount>
+			<meleeDamageDef>Blunt</meleeDamageDef>
+			<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+		</li>
+		<li>
+			<verbClass>Verb_MeleeAttack</verbClass>
+			<defaultCooldownTime>2</defaultCooldownTime>
+			<meleeDamageBaseAmount>4</meleeDamageBaseAmount>
+			<meleeDamageDef>Blunt</meleeDamageDef>
+			<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+		</li>
+		<li>
+			<verbClass>Verb_MeleeAttack</verbClass>
+			<defaultCooldownTime>3</defaultCooldownTime>
+			<meleeDamageBaseAmount>6</meleeDamageBaseAmount>
+			<meleeDamageDef>Blunt</meleeDamageDef>
+			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+		    <commonality>0.2</commonality>
+			<surpriseAttack>
+			<extraMeleeDamages>
+				<li>
+				<def>Stun</def>
+				<amount>10</amount>
+				</li>
+			</extraMeleeDamages>
+			</surpriseAttack>
+		</li>
+
+		
+	</verbs>
+
+	<alienRace>
+
+	<generalSettings>
+		<humanRecipeImport>true</humanRecipeImport>
+
+	
+		<!-- <pawnsSpecificBackstories>true</pawnsSpecificBackstories> -->
+		<pawnsSpecificBackstories>false</pawnsSpecificBackstories>
+		<alienPartGenerator>
+			<!-- -->
+			<alienbodytypes>
+				<li>Female</li>
+				<li>Male</li>
+			</alienbodytypes>
+			<!-- -->
+			<useGenderedHeads>true</useGenderedHeads>
+			<useGenderedBodies>true</useGenderedBodies>
+			<aliencrowntypes>
+                    <li>Average_Normal_01</li>
+					<li>Average_Normal_02</li>
+					<li>Average_Normal_03</li>
+					<li>Average_Normal_04</li>
+					<li>Average_Normal_05</li>
+					<li>Average_Normal_06</li>
+					<li>Average_Normal_07</li>
+					<li>Average_Normal_08</li>
+					<li>Average_Normal_09</li>
+				    <li>Average_Normal_10</li>
+	                <li>Average_Normal_11</li>
+					<li>Average_Normal_12</li>
+					<li>Average_Normal_13</li>
+					<li>Average_Normal_14</li>
+					<li>Average_Normal_15</li>
+					<li>Average_Normal_16</li>
+					<li>Average_Normal_17</li>
+					<li>Average_Normal_18</li>
+					<li>Average_Normal_19</li>
+				    <li>Average_Normal_20</li>
+					<li>Average_Normal_21</li>
+					<li>Average_Normal_22</li>
+					<li>Average_Normal_23</li>
+					<li>Average_Normal_24</li>
+					<li>Average_Normal_25</li>
+					<li>Average_Normal_26</li>
+					<li>Average_Normal_27</li>
+					<li>Average_Normal_28</li>
+					<li>Average_Normal_29</li>
+				    <li>Average_Normal_30</li>
+					<li>Average_Normal_31</li>
+					<li>Average_Normal_32</li>
+					<li>Average_Normal_33</li>
+					<li>Average_Normal_34</li>
+					<li>Average_Normal_35</li>
+					<li>Average_Normal_36</li>
+					<li>Average_Normal_37</li>
+					<li>Average_Normal_38</li>
+					<li>Average_Normal_39</li>
+				    <li>Average_Normal_40</li>
+			</aliencrowntypes>
+			
+			<!--<customPortraitDrawSize>(0.8, 0.8)</customPortraitDrawSize>-->
+			<alienskincolorgen Class="ColorGenerator_Options">
+				<options>
+				<!-- brown -->
+					<li><weight>3</weight><only>RGBA(1.0,1.0,1.0,1)</only></li>
+					<li><weight>3</weight><only>RGBA(1.000, 0.894, 0.769,1)</only></li>
+					<li><weight>3</weight><only>RGBA(0.678, 0.847, 0.902,1)</only></li>
+				</options>
+			</alienskincolorgen>
+			
+		</alienPartGenerator>
+
+		<maleGenderProbability>.95</maleGenderProbability>    
+		<!--<forcedRaceTraitEntries>
+			<li><defName>Bloodlust</defName><chance>10</chance></li>
+			</forcedRaceTraitEntries>-->
+	</generalSettings>    
+
+	<graphicPaths>
+		<li>
+			<body>Turian/Body/</body>
+			<head>Turian/HeadBase/</head>
+		</li>
+	</graphicPaths>
+
+	<hairSettings>
+		<hasHair>false</hasHair>
+	</hairSettings>
+
+	<relationSettings>
+	</relationSettings>
+
+	<pawnKindSettings>
+		<alienslavekinds>
+			<li>
+				<kindDefs>
+					<li>TurianSlave01</li>
+				</kindDefs>
+				<chance>20.0</chance>
+			</li>
+		</alienslavekinds>
+		<alienrefugeekinds>
+			<li>
+				<kindDefs>
+					<li>TurianRefugee01</li>
+				</kindDefs>
+				<chance>20.0</chance>
+			</li>
+		</alienrefugeekinds>
+		<startingColonists>
+			<li>
+			<pawnKindEntries>
+				<li>
+				<kindDefs>
+					<li>TurianColonist01</li>
+				</kindDefs>
+				<chance>10.0</chance>
+				</li>
+			</pawnKindEntries>
+				<factionDefs>
+					<li>TurianPlayerColony</li>
+					<li>PlayerColony</li>
+				</factionDefs>
+			</li>
+		</startingColonists>
+		<alienwandererkinds>
+			<li>
+				<pawnKindEntries>
+					<li>
+						<kindDefs>
+							<li>TurianSoldier01</li>
+							<li>TurianColonist01</li>
+						</kindDefs>
+						<chance>20.0</chance>
+					</li>
+				</pawnKindEntries>
+				<factionDefs>
+					<li>TurianPlayerColony</li> 
+				</factionDefs>
+			</li>
+		</alienwandererkinds>
+	</pawnKindSettings>
+ 
+	<thoughtSettings>
+		<cannotReceiveThoughts></cannotReceiveThoughts>
+		<ateThoughtSpecific></ateThoughtSpecific>
+		<replacerList></replacerList>
+	</thoughtSettings>
+
+	<raceRestriction>
+	</raceRestriction>
+
+</alienRace>
+    
+<race>
+	<thinkTreeMain>Humanlike</thinkTreeMain>
+	<nameGenerator>NamerPersonTurian</nameGenerator>
+	<nameGeneratorFemale>NamerPersonTurianFemale</nameGeneratorFemale>
+	<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+	<intelligence>Humanlike</intelligence>
+	<makesFootprints>true</makesFootprints>
+	<lifeExpectancy>150</lifeExpectancy>
+	<useLeatherFrom>Human</useLeatherFrom>
+	<bloodDef>FilthBloodTurian</bloodDef>
+	<nameCategory>HumanStandard</nameCategory>
+	<body>Human</body>
+	<baseBodySize>1.0</baseBodySize>
+	<baseHealthScale>1.0</baseHealthScale>
+	<baseHungerRate>1.0</baseHungerRate>
+	<foodType>OmnivoreHuman</foodType>
+
+
+	<gestationPeriodDays>45</gestationPeriodDays>
+      <litterSizeCurve>
+		<points>
+		<li>(0.5, 0)</li>
+		<li>(1, 1)</li>
+		<li>(1.01, 0.02)</li>
+		<li>(3.5, 0)</li>
+		</points>
+      </litterSizeCurve>
+      <lifeStageAges>
+        <li>
+          <def>AlienBabyStage</def>
+          <minAge>14</minAge>
+        </li>
+        <li>
+          <def>AlienChildStage</def>
+          <minAge>14</minAge>
+        </li>
+        <li>
+          <def>AlienAdultStage</def>
+          <minAge>18</minAge>
+        </li>
+		<li>
+          <def>AlienOldStage</def>
+          <minAge>90</minAge>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+      <specialShadowData>
+        <volume>(0.3, 0.8, 0.4)</volume>
+        <offset>(0,0,-0.3)</offset>
+      </specialShadowData>
+      <ageGenerationCurve>
+        <points>
+          <li>(14,0)</li>
+          <li>(17,4)</li>
+          <li>(25,20)</li>
+		  <li>(38,20)</li>
+		  <li>(49,25)</li>
+		  <li>(61,25)</li>
+		  <li>(78,15)</li>
+		  <li>(89,5)</li>
+		  <li>(101,5)</li>
+		  <li>(115,2)</li>
+		  <li>(130,0)</li>
+        </points>
+      </ageGenerationCurve>
+      <hediffGiverSets>
+        <li>OrganicStandard</li>
+      </hediffGiverSets>
+</race>
+    <recipes>
+
+		<li>InstallPowerClaw</li>
+		<li>InstallScytherBlade</li>
+		<li>InstallBionicEye</li>
+		<li>InstallBionicArm</li>
+		<li>InstallBionicLeg</li>
+		<li>InstallSimpleProstheticArm</li>
+		<li>InstallSimpleProstheticLeg</li>
+		<li>InstallPegLeg</li>
+		<li>InstallDenture</li>
+		<li>InstallJoywire</li>
+		<li>InstallPainstopper</li>
+		<li>InstallNaturalHeart</li>
+		<li>InstallNaturalLung</li>
+		<li>InstallNaturalKidney</li>
+		<li>InstallNaturalLiver</li>
+		<li>AdministerMechSerumHealer</li>
+		<li>ExciseCarcinoma</li>
+		<li>RemoveBodyPart</li>
+		<li>Euthanize</li>
+		<li>Anesthetize</li>
+    </recipes>
+    
+</AlienRace.ThingDef_AlienRace>
+</Defs>

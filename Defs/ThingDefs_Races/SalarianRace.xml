@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+    <defName>AlienSalarian</defName>
+    <label>Salarian</label>
+    
+    <description>The Salarians are warm-blooded amphibians who posses hyperactive metabolism; they think fast, talk fast and move fast. To Salarians, other species seem sluggish and dull-witted. Unfortunately, their metabolic speed leavs them with a relatively short lifespan; salarians over the age of 40 are a rarity.
+	
+	</description>
+        
+    <statBases>
+		<PsychicSensitivity>1.5</PsychicSensitivity>
+		<ToxicSensitivity>1.5</ToxicSensitivity>
+		<ComfyTemperatureMin>12</ComfyTemperatureMin>
+		<ComfyTemperatureMax>30</ComfyTemperatureMax>
+		<LeatherAmount>25</LeatherAmount>
+		<MarketValue>800</MarketValue>
+		<MoveSpeed>4.8</MoveSpeed>
+		<Flammability>1.0</Flammability>
+		
+		<CarryingCapacity>75</CarryingCapacity>
+		<MentalBreakThreshold>0.01</MentalBreakThreshold>
+
+		<SocialImpact>1.2</SocialImpact>
+		<PlantWorkSpeed>1.2</PlantWorkSpeed>
+		<PlantHarvestYield>1.2</PlantHarvestYield>
+		<ResearchSpeed>1.2</ResearchSpeed>
+		
+		<MiningSpeed>1.2</MiningSpeed>
+		<MiningYield>1.2</MiningYield>
+		<ConstructionSpeed>1.2</ConstructionSpeed>
+		<ConstructSuccessChance>1.2</ConstructSuccessChance>
+		<DrugProductionSpeed>1.2</DrugProductionSpeed>		
+		<SmeltingSpeed>1.2</SmeltingSpeed>
+		<SmithingSpeed>1.2</SmithingSpeed>
+		<TailoringSpeed>1.2</TailoringSpeed>
+
+		<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+		<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+
+		<ShootingAccuracy>1.1</ShootingAccuracy>
+		<MeleeHitChance>1.1</MeleeHitChance>
+		<MeleeDodgeChance>1.1</MeleeDodgeChance>
+		
+    </statBases>
+
+	<verbs>
+			<li>
+			<verbClass>Verb_MeleeAttack</verbClass>
+			<defaultCooldownTime>1.5</defaultCooldownTime>
+			<meleeDamageBaseAmount>4</meleeDamageBaseAmount>
+			<meleeDamageDef>Blunt</meleeDamageDef>
+			<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+		</li>
+		<li>
+			<verbClass>Verb_MeleeAttack</verbClass>
+			<defaultCooldownTime>1.5</defaultCooldownTime>
+			<meleeDamageBaseAmount>4</meleeDamageBaseAmount>
+			<meleeDamageDef>Blunt</meleeDamageDef>
+			<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+		</li>
+		<li>
+			<verbClass>Verb_MeleeAttack</verbClass>
+			<defaultCooldownTime>3</defaultCooldownTime>
+			<meleeDamageBaseAmount>6</meleeDamageBaseAmount>
+			<meleeDamageDef>Blunt</meleeDamageDef>
+			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+		    <commonality>0.2</commonality>
+			<surpriseAttack>
+			<extraMeleeDamages>
+				<li>
+				<def>Stun</def>
+				<amount>10</amount>
+				</li>
+			</extraMeleeDamages>
+			</surpriseAttack>
+		</li>
+
+		
+	</verbs>
+
+	<alienRace>
+
+	<generalSettings>
+		<humanRecipeImport>true</humanRecipeImport>
+
+	
+		<!-- <pawnsSpecificBackstories>true</pawnsSpecificBackstories> -->
+		<pawnsSpecificBackstories>false</pawnsSpecificBackstories>
+		<alienPartGenerator>
+			<!-- -->
+			<alienbodytypes>
+				<li>Thin</li>
+			</alienbodytypes>
+			<!-- -->
+			<useGenderedHeads>true</useGenderedHeads>
+			<useGenderedBodies>true</useGenderedBodies>
+			<aliencrowntypes>
+                    <li>Average_Normal_01</li>
+					<li>Average_Normal_02</li>
+					<li>Average_Normal_03</li>
+					<li>Average_Normal_04</li>
+					<li>Average_Normal_05</li>
+					<li>Average_Normal_06</li>
+					<li>Average_Normal_07</li>
+					<li>Average_Normal_08</li>
+					<li>Average_Normal_09</li>
+			        <li>Average_Normal_10</li>
+					<li>Average_Normal_11</li>
+					<li>Average_Normal_12</li>
+					<li>Average_Normal_13</li>
+					<li>Average_Normal_14</li>
+					<li>Average_Normal_15</li>
+					<li>Average_Normal_16</li>
+			</aliencrowntypes>
+			
+			     <customDrawSize>(1.35, 1.1)</customDrawSize>
+                 <customHeadDrawSize>(1.0, 1.0)</customHeadDrawSize>
+				 <customPortraitDrawSize>(1.35, 1.1)</customPortraitDrawSize>
+                 <customPortraitHeadDrawSize>(1.0, 1.0)</customPortraitHeadDrawSize>
+			<alienskincolorgen Class="ColorGenerator_Options">
+				<options>
+				<!-- brown -->
+					<li><weight>2</weight><only>RGBA(1.0,1.0,1.0,1)</only></li>
+					<li><weight>2</weight><only>RGBA(0.529,0.808,0.980,1)</only></li>
+					<li><weight>2</weight><only>RGBA(1.0,0.627,0.478,1)</only></li>
+					<li><weight>2</weight><only>RGBA(1.0,1.0,0.878,1)</only></li>
+				</options>
+			</alienskincolorgen>
+			
+		</alienPartGenerator>
+
+		<maleGenderProbability>.95</maleGenderProbability>    
+		<!--<forcedRaceTraitEntries>
+			<li><defName>Bloodlust</defName><chance>10</chance></li>
+			</forcedRaceTraitEntries>-->
+	</generalSettings>    
+
+	<graphicPaths>
+		<li>
+			<body>Salarian/Body/</body>
+			<head>Salarian/HeadBase/</head>
+		</li>
+	</graphicPaths>
+
+	<hairSettings>
+		<hasHair>false</hasHair>
+	</hairSettings>
+
+	<relationSettings>
+	</relationSettings>
+
+	<pawnKindSettings>
+		<alienslavekinds>
+			<li>
+				<kindDefs>
+					<li>SalarianSlave01</li>
+				</kindDefs>
+				<chance>20.0</chance>
+			</li>
+		</alienslavekinds>
+		<alienrefugeekinds>
+			<li>
+				<kindDefs>
+					<li>SalarianRefugee01</li>
+				</kindDefs>
+				<chance>20.0</chance>
+			</li>
+		</alienrefugeekinds>
+		<startingColonists>
+			<li>
+			<pawnKindEntries>
+				<li>
+				<kindDefs>
+					<li>SalarianColonist01</li>
+				</kindDefs>
+				<chance>10.0</chance>
+				</li>
+			</pawnKindEntries>
+				<factionDefs>
+					<li>SalarianPlayerColony</li>
+					<li>PlayerColony</li>
+				</factionDefs>
+			</li>
+		</startingColonists>
+		<alienwandererkinds>
+			<li>
+				<pawnKindEntries>
+					<li>
+						<kindDefs>
+							<li>SalarianSoldier01</li>
+							<li>SalarianColonist01</li>
+						</kindDefs>
+						<chance>20.0</chance>
+					</li>
+				</pawnKindEntries>
+				<factionDefs>
+					<li>SalarianPlayerColony</li> 
+				</factionDefs>
+			</li>
+		</alienwandererkinds>
+	</pawnKindSettings>
+ 
+	<thoughtSettings>
+		<cannotReceiveThoughts></cannotReceiveThoughts>
+		<ateThoughtSpecific></ateThoughtSpecific>
+		<replacerList></replacerList>
+	</thoughtSettings>
+
+	<raceRestriction>
+	</raceRestriction>
+
+</alienRace>
+    
+<race>
+	<thinkTreeMain>Humanlike</thinkTreeMain>
+	<nameGenerator>NamerPersonSalarian</nameGenerator>
+	<nameGeneratorFemale>NamerPersonSalarianFemale</nameGeneratorFemale>
+	<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+	<intelligence>Humanlike</intelligence>
+	<makesFootprints>true</makesFootprints>
+	<lifeExpectancy>40</lifeExpectancy>
+	<useLeatherFrom>Human</useLeatherFrom>
+	<bloodDef>FilthBloodSalarian</bloodDef>
+	<nameCategory>HumanStandard</nameCategory>
+	<body>Human</body>
+	<baseBodySize>1.0</baseBodySize>
+	<baseHealthScale>0.9</baseHealthScale>
+	<baseHungerRate>1.0</baseHungerRate>
+	
+	<foodType>OmnivoreHuman</foodType>
+
+
+	<gestationPeriodDays>45</gestationPeriodDays>
+      <litterSizeCurve>
+		<points>
+		<li>(0.5, 0)</li>
+		<li>(1, 1)</li>
+		<li>(1.01, 0.02)</li>
+		<li>(3.5, 0)</li>
+		</points>
+      </litterSizeCurve>
+      <lifeStageAges>
+        <li>
+          <def>SalarianBabyStage</def>
+          <minAge>14</minAge>
+        </li>
+        <li>
+          <def>SalarianChildStage</def>
+          <minAge>14</minAge>
+        </li>
+        <li>
+          <def>SalarianAdultStage</def>
+          <minAge>18</minAge>
+        </li>
+		<li>
+          <def>SalarianOldStage</def>
+          <minAge>75</minAge>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+      <specialShadowData>
+        <volume>(0.3, 0.8, 0.4)</volume>
+        <offset>(0,0,-0.3)</offset>
+      </specialShadowData>
+      <ageGenerationCurve>
+        <points>
+          <li>(14,0)</li>
+          <li>(14,20)</li>
+          <li>(17,30)</li>
+		  <li>(21,30)</li>
+		  <li>(25,25)</li>
+		  <li>(28,25)</li>
+		  <li>(31,15)</li>
+		  <li>(35,5)</li>
+		  <li>(40,0)</li>
+        </points>
+      </ageGenerationCurve>
+      <hediffGiverSets>
+        <li>OrganicStandard</li>
+      </hediffGiverSets>
+</race>
+    <recipes>
+
+		<li>InstallPowerClaw</li>
+		<li>InstallScytherBlade</li>
+		<li>InstallBionicEye</li>
+		<li>InstallBionicArm</li>
+		<li>InstallBionicLeg</li>
+		<li>InstallSimpleProstheticArm</li>
+		<li>InstallSimpleProstheticLeg</li>
+		<li>InstallPegLeg</li>
+		<li>InstallDenture</li>
+		<li>InstallJoywire</li>
+		<li>InstallPainstopper</li>
+		<li>InstallNaturalHeart</li>
+		<li>InstallNaturalLung</li>
+		<li>InstallNaturalKidney</li>
+		<li>InstallNaturalLiver</li>
+		<li>AdministerMechSerumHealer</li>
+		<li>ExciseCarcinoma</li>
+		<li>RemoveBodyPart</li>
+		<li>Euthanize</li>
+		<li>Anesthetize</li>
+    </recipes>
+    
+</AlienRace.ThingDef_AlienRace>
+</Defs>
